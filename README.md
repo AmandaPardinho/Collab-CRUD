@@ -1,2 +1,2 @@
 # Collab-CRUD
-Create the stock system of a stationery store
+Create the stock system of a stationery store.
