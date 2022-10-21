@@ -17,15 +17,19 @@ public class ScreenOne extends JFrame {
     JLabel scissors = new JLabel("Scissor");
     //JMenuBar menu = new JMenuBar();
     JLabel label = new JLabel("A label");
-
+    String[] brandNotebook1 = {"Cícero", "Faber-Castell", "Foroni", "Jandaia", "Spiral", "Tilibra" };
+    JComboBox brandNotebook2 = new JComboBox(brandNotebook1);
 
     public ScreenOne(){
         setLayout(new FlowLayout());
         setLayout(new GridLayout(7, 5));
+        label.setFont(new Font("Arial", Font.PLAIN, 16));
+        label.setForeground(new Color(0xbb5d7f));
         //getJMenuBar(menu);
         getContentPane().add(eraser);
         getContentPane().add(glue);
         getContentPane().add(notebook);
+        getContentPane().add(brandNotebook2);
         getContentPane().add(paper);
         getContentPane().add(pen);
         getContentPane().add(pencil);
@@ -33,8 +37,7 @@ public class ScreenOne extends JFrame {
         getContentPane().add(save);
         getContentPane().add(delete);
         getContentPane().add(close);
-        label.setFont(new Font("Serif", Font.PLAIN, 14));
-        label.setForeground(new Color(0xffffdd));
+
         setSize(400,500);
         setVisible(true);
         //pack();
