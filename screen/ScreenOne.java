@@ -416,6 +416,6 @@ public class ScreenOne extends JFrame {
 
     public static void main(String[] args) {
 
-        ScreenOne screen = new ScreenOne();
+        new ScreenOne();
     }
 }

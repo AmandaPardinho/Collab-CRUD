@@ -1,4 +1,4 @@
-/*package screen;
+/* package screen;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -8,6 +8,7 @@ public class ActionButton implements ActionListener {
 
     private actionSave;
     private actionDelete;
+
     public ActionButton(){
         this.actionDelete = actionDelete;
     }
@@ -27,4 +28,5 @@ public class ActionButton implements ActionListener {
 
 
     }
-}*/
+}
+*/
