@@ -33,10 +33,10 @@ public class Product {
                 System.out.println("option 1");
                 break;
             case 2:
-                this.chooseProduct();
+                this.chooseProduct(option);
                 break;
             case 3:
-                System.out.println("option 3");
+                this.chooseProduct(option);
                 break;
             default:
                 System.out.println("Invalid Command!");
@@ -44,20 +44,34 @@ public class Product {
         }
     }
 
-    public void chooseProduct(){
+    public void chooseProduct(int option){
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Which product? ");
         String product = scanner.nextLine();
 
-        System.out.println("How many products would you like to add? ");
+        System.out.println("How many products? ");
         int newQuantity = scanner.nextInt();
-        this.changeItemQuantity(product, newQuantity);
+
+        if(option == 2){
+            this.addItemQuantity(product, newQuantity);
+        }
+        else if(option == 3){
+            this.removeItemQuantity(product, newQuantity);
+        }
+        else{
+            System.out.println("Invalid command!");
+        }
+
     }
 
-    public void changeItemQuantity(String product, int newQuantity){
-        int  originalQuantity = this.quantity;
-        int  uptadedQuantity = (originalQuantity += newQuantity);
+    public void addItemQuantity(String product, int newQuantity){
+        int uptadedQuantity = this.quantity += newQuantity;
+        System.out.printf("New %c quantity is: %d", product, uptadedQuantity);
+    }
+
+    public void removeItemQuantity(String product, int quantityToRemove){
+        int uptadedQuantity = this.quantity - quantityToRemove;
         System.out.printf("New %c quantity is: %d", product, uptadedQuantity);
     }
 }
