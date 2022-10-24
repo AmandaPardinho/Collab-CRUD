@@ -1,4 +1,4 @@
-/* package screen;
+/*package event;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
