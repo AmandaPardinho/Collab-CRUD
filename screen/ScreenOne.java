@@ -31,8 +31,35 @@ public class ScreenOne extends JFrame {
         panel.setLayout(new BorderLayout());
         panel.setVisible(true);
 
+        //MenuScreen menuS = new MenuScreen();
+        //panel.add(BorderLayout.NORTH, menuS);
+
         GenericItemScreen panelGIS = new GenericItemScreen();
         panel.add(BorderLayout.NORTH, panelGIS);
+
+        EraserScreen eraserS = new EraserScreen();
+        panel.add(BorderLayout.CENTER, eraserS);
+
+        GlueScreen glueS = new GlueScreen();
+        panel.add(BorderLayout.CENTER, glueS);
+
+        NotebookScreen noteS = new NotebookScreen();
+        panel.add(BorderLayout.CENTER, noteS);
+
+        PaperScreen paperS = new PaperScreen();
+        panel.add(BorderLayout.CENTER, paperS);
+
+        PenScreen penS = new PenScreen();
+        panel.add(BorderLayout.CENTER, penS);
+
+        PencilScreen pencilS = new PencilScreen();
+        panel.add(BorderLayout.CENTER, pencilS);
+
+        ScissorsScreen scissorsS = new ScissorsScreen();
+        panel.add(BorderLayout.CENTER, scissorsS);
+
+        SharpenerScreen sharpS = new SharpenerScreen();
+        panel.add(BorderLayout.CENTER, sharpS);
     }
 
     public static void main(String[] args) throws Exception {
