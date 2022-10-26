@@ -2,13 +2,9 @@ package screen;
 
 import javax.swing.*;
 
-public class MenuScreen {
+public class MenuScreen extends JPanel {
 
-    //Frame
-    JFrame frame = new JFrame("Stock");
 
-    //Panel
-    JPanel panel = new JPanel();
 
     public MenuScreen(){
 

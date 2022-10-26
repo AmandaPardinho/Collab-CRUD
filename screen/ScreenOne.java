@@ -31,11 +31,18 @@ public class ScreenOne extends JFrame {
         panel.setLayout(new BorderLayout());
         panel.setVisible(true);
 
+        //Definição do tipo de tela criada (padrão windows)
+
+        //Composição de tela
+
         //MenuScreen menuS = new MenuScreen();
         //panel.add(BorderLayout.NORTH, menuS);
 
         GenericItemScreen panelGIS = new GenericItemScreen();
         panel.add(BorderLayout.NORTH, panelGIS);
+
+        ButtonScreen buttonS = new ButtonScreen();
+        panel.add(BorderLayout.SOUTH, buttonS);
 
         EraserScreen eraserS = new EraserScreen();
         panel.add(BorderLayout.CENTER, eraserS);
