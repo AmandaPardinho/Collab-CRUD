@@ -20,6 +20,8 @@ public class ScreenOne extends JFrame {
 
     public ScreenOne() throws Exception{
 
+        //UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
+
         //Frame
         frame.add(panel);
         frame.setJMenuBar(menuBar);
@@ -27,6 +29,10 @@ public class ScreenOne extends JFrame {
         frame.setLocation(0,0);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //programa termina ao fechar a janela
         frame.setVisible(true);
+
+        //Menubar
+        menuBar.setPreferredSize(new Dimension(40, 5));
+        menuBar.setVisible(true);
 
         //Layout
         panel.setSize(800, 600);
@@ -40,7 +46,8 @@ public class ScreenOne extends JFrame {
         //Composição de tela
 
         MenuScreen menuS = new MenuScreen();
-        frame.add(menuS);
+        frame.add(BorderLayout.NORTH, menuS);
+
 
         GenericItemScreen panelGIS = new GenericItemScreen();
         panel.add(BorderLayout.NORTH, panelGIS);

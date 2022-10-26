@@ -1,5 +1,7 @@
 package screen;
 
+import event.ExitFileAction;
+
 import javax.swing.*;
 
 public class MenuScreen extends JMenuBar {
@@ -17,13 +19,13 @@ public class MenuScreen extends JMenuBar {
     private JMenuItem saveFile = new JMenuItem("Save All");
     private JMenuItem printFile = new JMenuItem("Print");
     private JMenuItem exportFile = new JMenuItem("Export");
-    private JMenuItem exitFile = new JMenuItem("Exit");
+    private JMenuItem exitFile = new JMenuItem(new ExitFileAction());
 
     //Menu Sub-items Edit
     private JMenuItem cutEdit = new JMenuItem("Cut");
     private JMenuItem copyEdit = new JMenuItem("Copy");
     private JMenuItem pasteEdit = new JMenuItem("Paste");
-    private JMenuItem findEdit = new JMenuItem("find");
+    private JMenuItem findEdit = new JMenuItem("Find");
 
     //Menu Sub-items View
     private JMenuItem detailsView = new JMenuItem("Details");
@@ -48,11 +50,74 @@ public class MenuScreen extends JMenuBar {
 
     public MenuScreen(){
 
-       add(file);
-       add(edit);
-       add(view);
-       add(share);
-       add(help);
+        //Tabs
+        add(file);
+        file.setMnemonic('F');
+        add(edit);
+        edit.setMnemonic('E');
+        add(view);
+        view.setMnemonic('V');
+        add(share);
+        share.setMnemonic('S');
+        add(help);
+        help.setMnemonic('H');
+
+        //File sub-items
+        file.add(newFile);
+        newFile.setMnemonic('N');
+        file.add(openFile);
+        openFile.setMnemonic('O');
+        file.add(saveFile);
+        saveFile.setMnemonic('S');
+        file.add(printFile);
+        printFile.setMnemonic('P');
+        file.add(exportFile);
+        exportFile.setMnemonic('X');
+        file.add(exitFile);
+        exitFile.setText("Exit");
+        exitFile.setMnemonic('e');
+
+        //Edit sub-items
+        edit.add(cutEdit);
+        cutEdit.setMnemonic('C');
+        edit.add(copyEdit);
+        copyEdit.setMnemonic('Y');
+        edit.add(pasteEdit);
+        pasteEdit.setMnemonic('T');
+        edit.add(findEdit);
+        findEdit.setMnemonic('f');
+
+        //View sub-items
+        view.add(detailsView);
+        detailsView.setMnemonic('D');
+        view.add(stockNowView);
+        stockNowView.setMnemonic('W');
+        view.add(listView);
+        listView.setMnemonic('L');
+        view.add(iconView);
+        iconView.setMnemonic('I');
+        view.add(appearanceView);
+        appearanceView.setMnemonic('A');
+
+        //Share sub-items
+        share.add(emailShare);
+        emailShare.setMnemonic('M');
+        share.add(admShare);
+        admShare.setMnemonic('a');
+
+        //Help sub-items
+        help.add(firstStepHelp);
+        firstStepHelp.setMnemonic('R');
+        help.add(updateHelp);
+        updateHelp.setMnemonic('U');
+        help.add(findActionHelp);
+        findActionHelp.setMnemonic('n');
+        help.add(supportHelp);
+        supportHelp.setMnemonic('s');
+        help.add(helpHelp);
+        helpHelp.setMnemonic('H');
+        help.add(aboutHelp);
+        aboutHelp.setMnemonic('B');
 
     }
     public JMenu getFile() {
