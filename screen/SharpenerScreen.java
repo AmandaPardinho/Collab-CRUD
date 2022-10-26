@@ -22,37 +22,37 @@ public class SharpenerScreen extends JPanel{
         add(sharpener);
         sharpener.setFont(new Font("Arial", Font.PLAIN, 16));
         sharpener.setForeground(new Color(0x000000));
-        sharpener.setPreferredSize(new Dimension(100, 50));
+        sharpener.setPreferredSize(new Dimension(140, 50));
         //sharpener.setBounds(100, 450, 100, 50);
 
         add(brandSharpener2);
         brandSharpener2.setFont(new Font("Arial", Font.PLAIN, 16));
         brandSharpener2.setForeground(new Color(0x000000));
-        brandSharpener2.setPreferredSize(new Dimension(100, 50));
+        brandSharpener2.setPreferredSize(new Dimension(140, 50));
         //brandSharpener2.setBounds(200, 450, 100, 50);
 
         add(colorSharpener1);
         colorSharpener1.setFont(new Font("Arial", Font.PLAIN, 16));
         colorSharpener1.setForeground(new Color(0x000000));
-        colorSharpener1.setPreferredSize(new Dimension(100, 50));
+        colorSharpener1.setPreferredSize(new Dimension(140, 50));
         //colorSharpener1.setBounds(300, 450, 100, 50);
 
         add(sharpenerQuantity);
         sharpenerQuantity.setFont(new Font("Arial", Font.PLAIN, 16));
         sharpenerQuantity.setForeground(new Color(0x000000));
-        sharpenerQuantity.setPreferredSize(new Dimension(100, 50));
+        sharpenerQuantity.setPreferredSize(new Dimension(140, 50));
         //sharpenerQuantity.setBounds(400, 450, 100, 50);
 
         add(sharpenerUnitPrice);
         sharpenerUnitPrice.setFont(new Font("Arial", Font.PLAIN, 16));
         sharpenerUnitPrice.setForeground(new Color(0x000000));
-        sharpenerUnitPrice.setPreferredSize(new Dimension(100, 50));
+        sharpenerUnitPrice.setPreferredSize(new Dimension(140, 50));
         //sharpenerUnitPrice.setBounds(500, 450, 100, 50);
 
         add(sharpenerTotalAmount);
         sharpenerTotalAmount.setFont(new Font("Arial", Font.PLAIN, 16));
         sharpenerTotalAmount.setForeground(new Color(0x000000));
-        sharpenerTotalAmount.setPreferredSize(new Dimension(100, 50));
+        sharpenerTotalAmount.setPreferredSize(new Dimension(140, 50));
         //sharpenerTotalAmount.setBounds(600, 450, 100, 50);
     }
 
