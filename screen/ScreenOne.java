@@ -12,6 +12,9 @@ public class ScreenOne extends JFrame {
     //Panel
     JPanel panel = new JPanel();
 
+    //Menubar
+    private JMenuBar menuBar = new JMenuBar();
+
     //Generic Array
     //String[] colorArray = {"", "None", "Black", "Blue", "Green", "Pink", "Purple", "Red", "White", "Yellow"};
 
@@ -19,6 +22,7 @@ public class ScreenOne extends JFrame {
 
         //Frame
         frame.add(panel);
+        frame.setJMenuBar(menuBar);
         frame.setSize(800, 600);
         frame.setLocation(0,0);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //programa termina ao fechar a janela
@@ -35,7 +39,8 @@ public class ScreenOne extends JFrame {
 
         //Composição de tela
 
-        //MenuScreen menuS = new MenuScreen();
+        MenuScreen menuS = new MenuScreen();
+        frame.add(menuS);
         //panel.add(BorderLayout.NORTH, menuS);
 
         GenericItemScreen panelGIS = new GenericItemScreen();
