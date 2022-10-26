@@ -41,7 +41,6 @@ public class ScreenOne extends JFrame {
 
         MenuScreen menuS = new MenuScreen();
         frame.add(menuS);
-        //panel.add(BorderLayout.NORTH, menuS);
 
         GenericItemScreen panelGIS = new GenericItemScreen();
         panel.add(BorderLayout.NORTH, panelGIS);

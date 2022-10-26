@@ -25,23 +25,25 @@ public class MenuScreen extends JMenuBar {
     private JMenuItem pasteEdit = new JMenuItem("Paste");
     private JMenuItem findEdit = new JMenuItem("find");
 
-   /* //Menu Sub-items View
-    private JMenuItem openFile = new JMenuItem();
-    private JMenuItem openFile = new JMenuItem();
-    private JMenuItem openFile = new JMenuItem();
-    private JMenuItem openFile = new JMenuItem();
+    //Menu Sub-items View
+    private JMenuItem detailsView = new JMenuItem("Details");
+    private JMenuItem stockNowView = new JMenuItem("Stock Now");
+    private JMenuItem listView = new JMenuItem("List");
+    private JMenuItem iconView = new JMenuItem("Icon");
+    private JMenuItem appearanceView = new JMenuItem("App Appearance");
 
     //Menu Sub-items Share
-    private JMenuItem openFile = new JMenuItem();
-    private JMenuItem openFile = new JMenuItem();
-    private JMenuItem openFile = new JMenuItem();
-    private JMenuItem openFile = new JMenuItem();
+    private JMenuItem emailShare = new JMenuItem("E-mail");
+    private JMenuItem admShare = new JMenuItem("Internal Sharing");
 
     //Menu Sub-items Help
-    private JMenuItem openFile = new JMenuItem();
-    private JMenuItem openFile = new JMenuItem();
-    private JMenuItem openFile = new JMenuItem();
-    private JMenuItem openFile = new JMenuItem();*/
+    private JMenuItem firstStepHelp = new JMenuItem("Getting Started");
+    private JMenuItem updateHelp = new JMenuItem("Update Software");
+    private JMenuItem findActionHelp = new JMenuItem("Find Action");
+    private JMenuItem supportHelp = new JMenuItem("Contact Support");
+    private JMenuItem helpHelp = new JMenuItem("Help");
+    private JMenuItem aboutHelp = new JMenuItem("About");
+
 
 
     public MenuScreen(){
