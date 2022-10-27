@@ -1,7 +1,10 @@
 package addscreen;
 
+import screen.MenuScreen;
+
 import javax.swing.*;
 import java.awt.*;
+import java.awt.BorderLayout.*;
 
 public class ScreenAdd extends JFrame{
     //Frame
@@ -29,42 +32,57 @@ public class ScreenAdd extends JFrame{
     //JTextField
     private JTextField addQuantity = new JTextField(null, 8);
 
-    public ScreenAdd(){
+    public ScreenAdd() throws Exception{
 
         //Frame
         frameAdd.add(panelAdd);
         frameAdd.setJMenuBar(menuBarAdd);
-        frameAdd.setSize(1280, 720);
+        frameAdd.setSize(800, 600);
         frameAdd.setLocation(0,0);
         frameAdd.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //programa termina ao fechar a janela
         frameAdd.setVisible(true);
 
-        //Menubar
-        menuBarAdd.setPreferredSize(new Dimension(40, 5));
-        menuBarAdd.setVisible(true);
-
         //Layout PanelAdd
-        panelAdd.setSize(1280, 720);
+        panelAdd.setSize(800, 600);
         panelAdd.setLocation(0,0);
         panelAdd.setLayout(new BorderLayout());
         panelAdd.setVisible(true);
 
-        //Add
+        //Menubar
+        menuBarAdd.setPreferredSize(new Dimension(40, 5));
+        menuBarAdd.setVisible(true);
+        MenuScreen menuScreenAdd =new MenuScreen();
+        frameAdd.add(BorderLayout.NORTH, menuScreenAdd);
+
+        //Product Stuf
         panelAdd.add(addProductLabel);
-        addButton.setPreferredSize(new Dimension(100, 50));
+        //addProductLabel.setPreferredSize(new Dimension(100, 50));
+        addProductLabel.setBounds(100, 200, 100, 50);
+        addProductLabel.setFont(new Font("Arial", Font.PLAIN, 16));
+        addProductLabel.setForeground(new Color(0x000000));
         panelAdd.add(addProductBox);
-        addButton.setPreferredSize(new Dimension(100, 50));
+        addProductBox.setBounds(250, 200, 100, 50);
+        addProductBox.setFont(new Font("Arial", Font.PLAIN, 16));
+        addProductBox.setForeground(new Color(0x000000));
+
+        //Product Quantity
         panelAdd.add(addQuantityLabel);
-        addButton.setPreferredSize(new Dimension(100, 50));
+        addQuantityLabel.setBounds(400, 300, 100, 50);
+        addQuantityLabel.setFont(new Font("Arial", Font.PLAIN, 16));
+        addQuantityLabel.setForeground(new Color(0x000000));
         panelAdd.add(addQuantity);
-        addButton.setPreferredSize(new Dimension(100, 50));
+        addQuantity.setBounds(550, 200, 100, 50);
+        addQuantity.setFont(new Font("Arial", Font.PLAIN, 16));
+        addQuantity.setForeground(new Color(0x000000));
+
+        //Add Button
         panelAdd.add(addButton);
-        addButton.setPreferredSize(new Dimension(100, 50));
+        addButton.setBounds(400, 0, 100, 50);
+        addButton.setFont(new Font("Arial", Font.PLAIN, 16));
+        addButton.setForeground(new Color(0x000000));
         panelAdd.add(BorderLayout.SOUTH, addButton);
-
-
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         new ScreenAdd();
     }
 }
