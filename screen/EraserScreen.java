@@ -44,7 +44,6 @@ public class EraserScreen extends JPanel{
         //eraserQuantity.setBounds(400, 100, 100, 50);
 
         add(eraserUnitPrice);
-
         eraserUnitPrice.setFont(new Font("Arial", Font.PLAIN, 16));
         eraserUnitPrice.setForeground(new Color(0x000000));
         eraserUnitPrice.setPreferredSize(new Dimension(100, 50));
