@@ -1,2 +1,4 @@
-package screen;public class ScreenAdd {
+package screen;
+
+public class ScreenAdd {
 }
