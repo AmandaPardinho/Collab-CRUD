@@ -16,22 +16,6 @@ public class ScreenAdd extends JFrame{
     //Menubar
     private JMenuBar menuBarAdd = new JMenuBar();
 
-    //Button
-    private JButton addButton = new JButton("Add");
-
-    //Array Product
-    private String[] addArray = {"", "Eraser", "Glue", "Notebook", "Paper", "Pen", "Pencil", "Scissors", "Sharpener"};
-
-    //JLabel
-    private JLabel addProductLabel = new JLabel("Product");
-    private JLabel addQuantityLabel = new JLabel("Quantity");
-
-    //ComboBox
-    private JComboBox addProductBox = new JComboBox(addArray);
-
-    //JTextField
-    private JTextField addQuantity = new JTextField(null, 8);
-
     public ScreenAdd() throws Exception{
 
         //Frame
@@ -55,32 +39,13 @@ public class ScreenAdd extends JFrame{
         frameAdd.add(BorderLayout.NORTH, menuScreenAdd);
 
         //Product Stuf
-        panelAdd.add(addProductLabel);
-        //addProductLabel.setPreferredSize(new Dimension(100, 50));
-        addProductLabel.setBounds(100, 200, 100, 50);
-        addProductLabel.setFont(new Font("Arial", Font.PLAIN, 16));
-        addProductLabel.setForeground(new Color(0x000000));
-        panelAdd.add(addProductBox);
-        addProductBox.setBounds(250, 200, 100, 50);
-        addProductBox.setFont(new Font("Arial", Font.PLAIN, 16));
-        addProductBox.setForeground(new Color(0x000000));
+
 
         //Product Quantity
-        panelAdd.add(addQuantityLabel);
-        addQuantityLabel.setBounds(400, 300, 100, 50);
-        addQuantityLabel.setFont(new Font("Arial", Font.PLAIN, 16));
-        addQuantityLabel.setForeground(new Color(0x000000));
-        panelAdd.add(addQuantity);
-        addQuantity.setBounds(550, 200, 100, 50);
-        addQuantity.setFont(new Font("Arial", Font.PLAIN, 16));
-        addQuantity.setForeground(new Color(0x000000));
+
 
         //Add Button
-        panelAdd.add(addButton);
-        addButton.setBounds(400, 0, 100, 50);
-        addButton.setFont(new Font("Arial", Font.PLAIN, 16));
-        addButton.setForeground(new Color(0x000000));
-        panelAdd.add(BorderLayout.SOUTH, addButton);
+
     }
     public static void main(String[] args) throws Exception {
         new ScreenAdd();
