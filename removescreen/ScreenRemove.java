@@ -31,7 +31,7 @@ public class ScreenRemove {
         //Frame
         frameRemove.add(panelRemove);
         frameRemove.setJMenuBar(menuBarRemove);
-        frameRemove.setSize(1280, 720);
+        frameRemove.setSize(800, 600);
         frameRemove.setLocation(0,0);
         frameRemove.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //programa termina ao fechar a janela
         frameRemove.setVisible(true);
@@ -41,7 +41,7 @@ public class ScreenRemove {
         menuBarRemove.setVisible(true);
 
         //Layout Panel 1
-        panelRemove.setSize(1280, 720);
+        panelRemove.setSize(800, 600);
         panelRemove.setLocation(0,0);
         panelRemove.setLayout(new BorderLayout());
         panelRemove.setVisible(true);
