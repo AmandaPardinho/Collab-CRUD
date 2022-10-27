@@ -1,3 +1,5 @@
+package product;
+
 import java.util.Scanner;
 
 public class Product {
@@ -9,13 +11,6 @@ public class Product {
     public Product() {
 
     }
-
-    //public Product(String name, String color, String brand, Integer quantity) {
-    //    this.name = name;
-    //    this.color = color;
-    //    this.brand = brand;
-   //     this.quantity = quantity;
-   // }
 
     public void showMenu(){
         Scanner scanner = new Scanner(System.in);
@@ -34,36 +29,15 @@ public class Product {
                 System.out.println("option 1");
                 break;
             case 2:
-                this.chooseProduct(option);
+                System.out.println("option 2");
                 break;
             case 3:
-                this.chooseProduct(option);
+                System.out.println("option 3");
                 break;
             default:
                 System.out.println("Invalid Command!");
                 break;
         }
-    }
-
-    public void chooseProduct(int option){
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Which product? ");
-        String product = scanner.nextLine();
-
-        System.out.println("How many products? ");
-        int newQuantity = scanner.nextInt();
-
-        if(option == 2){
-            this.addItemQuantity(product, newQuantity);
-        }
-        else if(option == 3){
-            this.removeItemQuantity(product, newQuantity);
-        }
-        else{
-            System.out.println("Invalid command!");
-        }
-
     }
 
     public void addItemQuantity(String product, int newQuantity){
