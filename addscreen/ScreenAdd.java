@@ -47,6 +47,8 @@ public class ScreenAdd extends JFrame{
         panelAdd.add(BorderLayout.EAST, quantityAdd);
 
         //Add Button
+        ButtonAdd buttonAdd = new ButtonAdd();
+        panelAdd.add(BorderLayout.SOUTH, buttonAdd);
 
     }
     public static void main(String[] args) throws Exception {
