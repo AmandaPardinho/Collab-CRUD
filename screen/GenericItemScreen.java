@@ -5,7 +5,7 @@ import java.awt.*;
 
 public class GenericItemScreen extends JPanel {
     //Generic Labels
-    private JLabel product = new JLabel("Product");
+    private JLabel product = new JLabel("product.Product");
     private JLabel brand = new JLabel("Brand");
     private JLabel color = new JLabel("Color");
     private JLabel quantity = new JLabel("Quantity");
