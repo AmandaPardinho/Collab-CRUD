@@ -15,18 +15,6 @@ public class ScreenRemove {
     //Menubar
     private JMenuBar menuBarRemove = new JMenuBar();
 
-    //Array Product
-    private String[] removeArray = {"", "Eraser", "Glue", "Notebook", "Paper", "Pen", "Pencil", "Scissors", "Sharpener"};
-
-    //JLabel
-    private JLabel removeProductLabel = new JLabel("Product");
-    private JLabel removeQuantityLabel = new JLabel("Quantity");
-
-    //ComboBox
-    private JComboBox removeProductBox = new JComboBox(removeArray);
-
-    //JTextField
-    private JTextField removeQuantity = new JTextField(null, 8);
 
     public ScreenRemove(){
 
@@ -49,6 +37,14 @@ public class ScreenRemove {
         menuBarRemove.setVisible(true);
         MenuScreen menuScreenRemove = new MenuScreen();
         frameRemove.add(BorderLayout.NORTH, menuScreenRemove);
+
+        //Product Remove
+        ProductRemove productRemove = new ProductRemove();
+        panelRemove.add(BorderLayout.WEST, productRemove);
+
+        //Product Quantity Remove
+
+        //Remove Button
     }
 
     public static void main(String[] args) {
