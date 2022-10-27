@@ -31,7 +31,7 @@ public class ScreenViewStock extends JFrame {
         frame.add(panel3);
         frame.add(panel4);
         frame.setJMenuBar(menuBar);
-        frame.setSize(1280, 720);
+        frame.setSize(800, 600);
         frame.setLocation(0,0);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //programa termina ao fechar a janela
         frame.setVisible(true);
@@ -41,7 +41,7 @@ public class ScreenViewStock extends JFrame {
         menuBar.setVisible(true);
 
         //Layout Panel 1
-        panel1.setSize(1280, 720);
+        panel1.setSize(800, 600);
         panel1.setLocation(0,0);
         panel1.setBackground(Color.cyan);
         panel1.setLayout(new BorderLayout());

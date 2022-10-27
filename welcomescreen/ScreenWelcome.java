@@ -1,5 +1,9 @@
 package welcomescreen;
 
+import addscreen.ButtonAdd;
+import removescreen.ButtonRemove;
+import screen.MenuScreen;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -20,7 +24,7 @@ public class ScreenWelcome {
         //Frame
         frameWelcome.add(panelWelcome);
         frameWelcome.setJMenuBar(menuBarWelcome);
-        frameWelcome.setSize(1280, 720);
+        frameWelcome.setSize(800, 600);
         frameWelcome.setLocation(0,0);
         frameWelcome.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //programa termina ao fechar a janela
         frameWelcome.setVisible(true);
@@ -28,14 +32,30 @@ public class ScreenWelcome {
         //Menubar
         menuBarWelcome.setPreferredSize(new Dimension(40, 5));
         menuBarWelcome.setVisible(true);
+        MenuScreen menuScreenWelcome =new MenuScreen();
+        frameWelcome.add(BorderLayout.NORTH, menuScreenWelcome);
 
         //Layout Panel 1
-        panelWelcome.setSize(1280, 720);
+        panelWelcome.setSize(800, 600);
         panelWelcome.setLocation(0,0);
         panelWelcome.setLayout(new BorderLayout());
         panelWelcome.setVisible(true);
+
+        //Label Welcome
+
+        //Button View
+        ButtonViewWelcome buttonViewWelcome = new ButtonViewWelcome();
+        panelWelcome.add(BorderLayout.WEST, buttonViewWelcome);
+
+        //Button Add
+        ButtonAdd buttonAddWelcome = new ButtonAdd();
+        panelWelcome.add(BorderLayout.SOUTH, buttonAddWelcome);
+
+        //Button Remove
+        ButtonRemove buttonRemoveWelcome = new ButtonRemove();
+        panelWelcome.add(BorderLayout.EAST, buttonRemoveWelcome);
     }
     public static void main(String[] args) {
-
+        new ScreenWelcome();
     }
 }
