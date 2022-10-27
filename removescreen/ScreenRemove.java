@@ -43,6 +43,8 @@ public class ScreenRemove {
         panelRemove.add(BorderLayout.WEST, productRemove);
 
         //Product Quantity Remove
+        QuantityRemove quantityRemove = new QuantityRemove();
+        panelRemove.add(BorderLayout.EAST, quantityRemove);
 
         //Remove Button
     }
