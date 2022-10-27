@@ -1,2 +1,4 @@
-package addscreen;public class QuantityAdd {
+package addscreen;
+
+public class QuantityAdd {
 }
