@@ -15,16 +15,28 @@ public class ProductAdd extends JPanel {
     private JComboBox addProductBox = new JComboBox(addArray);
 
     public ProductAdd(){
+        setLayout(new FlowLayout());
 
+        //Product Label
         add(addProductLabel);
         //addProductLabel.setPreferredSize(new Dimension(100, 50));
         addProductLabel.setBounds(100, 200, 100, 50);
-        addProductLabel.setFont(new Font("Arial", Font.PLAIN, 16));
+        addProductLabel.setFont(new Font("Arial", Font.PLAIN, 18));
         addProductLabel.setForeground(new Color(0x000000));
+
+        //Product ComboBox
         add(addProductBox);
         addProductBox.setBounds(250, 200, 100, 50);
-        addProductBox.setFont(new Font("Arial", Font.PLAIN, 16));
+        addProductBox.setFont(new Font("Arial", Font.PLAIN, 18));
         addProductBox.setForeground(new Color(0x000000));
+    }
+
+    public JLabel getAddProductLabel() {
+        return addProductLabel;
+    }
+
+    public JComboBox getAddProductBox() {
+        return addProductBox;
     }
 
     public static void main(String[] args) {
