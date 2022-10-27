@@ -9,6 +9,7 @@ public class ButtonViewWelcome extends JPanel {
     private JButton viewWelcomeButton = new JButton("View");
 
     public ButtonViewWelcome(){
+        setLayout(new FlowLayout());
 
         add(viewWelcomeButton);
         viewWelcomeButton.setBounds(400, 0, 100, 50);

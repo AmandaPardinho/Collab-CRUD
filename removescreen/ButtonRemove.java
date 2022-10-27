@@ -9,6 +9,7 @@ public class ButtonRemove extends JPanel {
     private JButton removeButton = new JButton("Remove");
 
     public ButtonRemove(){
+        setLayout(new FlowLayout());
 
         add(removeButton);
         removeButton.setBounds(400, 0, 100, 50);

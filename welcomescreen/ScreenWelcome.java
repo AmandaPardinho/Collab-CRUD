@@ -42,6 +42,8 @@ public class ScreenWelcome {
         panelWelcome.setVisible(true);
 
         //Label Welcome
+        LabelWelcome labelWelcome = new LabelWelcome();
+        panelWelcome.add(BorderLayout.NORTH, labelWelcome);
 
         //Button View
         ButtonViewWelcome buttonViewWelcome = new ButtonViewWelcome();
