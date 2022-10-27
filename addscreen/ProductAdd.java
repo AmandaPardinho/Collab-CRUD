@@ -1,2 +1,4 @@
-package addscreen;public class ProductAdd {
+package addscreen;
+
+public class ProductAdd {
 }
