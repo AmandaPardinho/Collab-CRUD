@@ -6,15 +6,16 @@ public class Product {
     private String brand;
     private Integer quantity;
 
-    //public Product() {
+    public Product() {
 
-   // }
-    public Product(String name, String color, String brand, Integer quantity) {
-        this.name = name;
-        this.color = color;
-        this.brand = brand;
-        this.quantity = quantity;
     }
+
+    //public Product(String name, String color, String brand, Integer quantity) {
+    //    this.name = name;
+    //    this.color = color;
+    //    this.brand = brand;
+   //     this.quantity = quantity;
+   // }
 
     public void showMenu(){
         Scanner scanner = new Scanner(System.in);
@@ -67,11 +68,16 @@ public class Product {
 
     public void addItemQuantity(String product, int newQuantity){
         int uptadedQuantity = this.quantity += newQuantity;
-        System.out.printf("New %c quantity is: %d", product, uptadedQuantity);
+        System.out.printf("New %s quantity is: %d", product, uptadedQuantity);
     }
 
     public void removeItemQuantity(String product, int quantityToRemove){
-        int uptadedQuantity = this.quantity - quantityToRemove;
-        System.out.printf("New %c quantity is: %d", product, uptadedQuantity);
+        if(this.quantity >= 0){
+            int uptadedQuantity = this.quantity - quantityToRemove;
+            System.out.printf("New %s quantity is: %d", product, uptadedQuantity);
+        }
+        else {
+            System.out.printf("There is not enough quantity for this item!");
+        }
     }
 }

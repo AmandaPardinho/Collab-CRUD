@@ -1,6 +1,8 @@
+import product.Product;
+
 public class Main {
     public static void main(String[] args) {
-        Product product1 = new Product("pen", "blue", "BIC", 1);
+        Product product1 = new Product();
         product1.showMenu();
     }
 }
