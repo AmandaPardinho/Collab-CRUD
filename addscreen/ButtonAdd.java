@@ -1,4 +1,23 @@
 package addscreen;
 
-public class ButtonAdd {
+import javax.swing.*;
+import java.awt.*;
+
+public class ButtonAdd extends JPanel {
+
+    //Button
+    private JButton addButton = new JButton("Add");
+
+    public ButtonAdd(){
+
+        add(addButton);
+        addButton.setBounds(400, 0, 100, 50);
+        addButton.setFont(new Font("Arial", Font.PLAIN, 16));
+        addButton.setForeground(new Color(0x000000));
+        //add(BorderLayout.SOUTH, addButton);
+    }
+
+    public static void main(String[] args) {
+
+    }
 }
