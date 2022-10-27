@@ -3,7 +3,7 @@ package screen;
 import javax.swing.*;
 import java.awt.*;
 
-public class ScreenOne extends JFrame {
+public class ScreenViewStock extends JFrame {
 //CLASSE PRINCIPAL DA TELA
 
     //Frame
@@ -21,7 +21,7 @@ public class ScreenOne extends JFrame {
     //Generic Array
     //String[] colorArray = {"", "None", "Black", "Blue", "Green", "Pink", "Purple", "Red", "White", "Yellow"};
 
-    public ScreenOne() throws Exception{
+    public ScreenViewStock() throws Exception{
 
         //UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
 
@@ -58,10 +58,10 @@ public class ScreenOne extends JFrame {
 
         //Panel 1
         GenericItemScreen panelGIS = new GenericItemScreen();
-        panel1.add(BorderLayout.NOTH, panelGIS);
+        panel1.add(BorderLayout.NORTH, panelGIS);
 
         ButtonScreen buttonS = new ButtonScreen();
-        panel1.add(BorderLayout.SOURTH, buttonS);
+        panel1.add(BorderLayout.SOUTH, buttonS);
 
         //Panel 2
         EraserScreen eraserS = new EraserScreen();
@@ -92,6 +92,6 @@ public class ScreenOne extends JFrame {
     }
 
     public static void main(String[] args) throws Exception {
-        new ScreenOne();
+        new ScreenViewStock();
     }
 }
