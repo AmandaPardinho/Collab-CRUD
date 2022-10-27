@@ -1,2 +1,4 @@
-package screen;public class ScreenWelcome {
+package screen;
+
+public class ScreenWelcome {
 }
