@@ -47,6 +47,8 @@ public class ScreenRemove {
         panelRemove.add(BorderLayout.EAST, quantityRemove);
 
         //Remove Button
+        ButtonRemove buttonRemove = new ButtonRemove();
+        panelRemove.add(BorderLayout.SOUTH, buttonRemove);
     }
 
     public static void main(String[] args) {
