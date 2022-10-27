@@ -38,12 +38,13 @@ public class ScreenAdd extends JFrame{
         MenuScreen menuScreenAdd =new MenuScreen();
         frameAdd.add(BorderLayout.NORTH, menuScreenAdd);
 
-        //Product Stuf
+        //Product Add
         ProductAdd productAdd = new ProductAdd();
         panelAdd.add(BorderLayout.WEST, productAdd);
 
         //Product Quantity
-
+        QuantityAdd quantityAdd = new QuantityAdd();
+        panelAdd.add(BorderLayout.EAST, quantityAdd);
 
         //Add Button
 
