@@ -1,5 +1,6 @@
 package product;
 
+import javax.swing.*;
 import java.util.Scanner;
 
 public class Product {
@@ -48,10 +49,12 @@ public class Product {
     public void removeItemQuantity(String product, int quantityToRemove){
         if(this.quantity >= 0){
             int uptadedQuantity = this.quantity - quantityToRemove;
-            System.out.printf("New %s quantity is: %d", product, uptadedQuantity);
+            JOptionPane.showMessageDialog(null, "New %s quantity is: %d" + product +
+                    uptadedQuantity, "Removed Successfully", JOptionPane.INFORMATION_MESSAGE);
         }
         else {
-            System.out.printf("There is not enough quantity for this item!");
+            JOptionPane.showMessageDialog(null, "There is not enough quantity for this item!",
+                    "Removal error", JOptionPane.INFORMATION_MESSAGE);
         }
     }
 }
