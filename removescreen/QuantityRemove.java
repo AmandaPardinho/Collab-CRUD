@@ -1,4 +1,7 @@
 package removescreen;
 
-public class QuantityRemove {
+import javax.swing.*;
+
+public class QuantityRemove extends JPanel {
+
 }

@@ -1,5 +1,7 @@
 package removescreen;
 
+import screen.MenuScreen;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -36,18 +38,20 @@ public class ScreenRemove {
         frameRemove.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //programa termina ao fechar a janela
         frameRemove.setVisible(true);
 
-        //Menubar
-        menuBarRemove.setPreferredSize(new Dimension(40, 5));
-        menuBarRemove.setVisible(true);
-
         //Layout Panel 1
         panelRemove.setSize(800, 600);
         panelRemove.setLocation(0,0);
         panelRemove.setLayout(new BorderLayout());
         panelRemove.setVisible(true);
+
+        //Menubar
+        menuBarRemove.setPreferredSize(new Dimension(40, 5));
+        menuBarRemove.setVisible(true);
+        MenuScreen menuScreenRemove = new MenuScreen();
+        frameRemove.add(BorderLayout.NORTH, menuScreenRemove);
     }
 
     public static void main(String[] args) {
-
+        new ScreenRemove();
     }
 }
