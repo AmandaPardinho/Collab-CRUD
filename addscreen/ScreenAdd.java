@@ -29,7 +29,7 @@ public class ScreenAdd extends JFrame{
         //Layout PanelAdd
         panelAdd.setSize(800, 600);
         panelAdd.setLocation(0,0);
-        panelAdd.setLayout(new BorderLayout());
+        panelAdd.setLayout(new BorderLayout(10,250));
         panelAdd.setVisible(true);
 
         //Menubar

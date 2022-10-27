@@ -15,7 +15,7 @@ public class ProductAdd extends JPanel {
     private JComboBox addProductBox = new JComboBox(addArray);
 
     public ProductAdd(){
-        setLayout(new FlowLayout());
+        setLayout(new GridLayout(1,2));
 
         //Product Label
         add(addProductLabel);

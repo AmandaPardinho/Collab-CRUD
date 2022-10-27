@@ -12,7 +12,7 @@ public class QuantityAdd extends JPanel {
     private JTextField addQuantity = new JTextField(null, 8);
 
     public QuantityAdd(){
-        setLayout(new FlowLayout());
+        setLayout(new GridLayout(1,2));
 
         //Label
         add(addQuantityLabel);
