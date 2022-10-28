@@ -43,7 +43,7 @@ public class ScreenViewStock extends JFrame {
         //Layout Panel 1
         panel1.setSize(800, 600);
         panel1.setLocation(0,0);
-        panel1.setBackground(Color.cyan);
+        //panel1.setBackground(Color.cyan);
         panel1.setLayout(new BorderLayout());
         panel1.setVisible(true);
 

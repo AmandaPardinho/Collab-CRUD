@@ -13,7 +13,7 @@ public class ButtonAdd extends JPanel {
 
         add(addButton);
         addButton.setBounds(400, 0, 100, 50);
-        addButton.setFont(new Font("Arial", Font.PLAIN, 16));
+        addButton.setFont(new Font("Arial", Font.PLAIN, 18));
         addButton.setForeground(new Color(0x000000));
     }
 

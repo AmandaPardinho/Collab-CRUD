@@ -13,7 +13,7 @@ public class ButtonViewWelcome extends JPanel {
 
         add(viewWelcomeButton);
         viewWelcomeButton.setBounds(400, 0, 100, 50);
-        viewWelcomeButton.setFont(new Font("Arial", Font.PLAIN, 16));
+        viewWelcomeButton.setFont(new Font("Arial", Font.PLAIN, 18));
         viewWelcomeButton.setForeground(new Color(0x000000));
     }
 

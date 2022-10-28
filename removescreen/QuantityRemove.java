@@ -15,7 +15,7 @@ public class QuantityRemove extends JPanel {
 
         //Label
         add(removeQuantityLabel);
-        removeQuantityLabel.setBounds(400, 300, 100, 50);
+        removeQuantityLabel.setBounds(400, 300, 100, 90);
         removeQuantityLabel.setFont(new Font("Arial", Font.PLAIN, 18));
         removeQuantityLabel.setForeground(new Color(0x000000));
 
